@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Collapse, Jumbotron, Nav, Navbar, NavbarToggler, NavItem,
-Modal, ModalHeader, ModalBody, NavLink } from 'reactstrap';
+import { Button, Collapse, Jumbotron, Nav, Navbar, NavbarToggler,
+Modal, ModalHeader, ModalBody, NavLink, ListGroup, ListGroupItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
@@ -8,17 +9,25 @@ class Header extends Component {
         super(props);
         
         this.state = {
-            isNavOpen: false
+            isNavOpen: false,
+            isModalOpen: false
         };
 
         this.toggleNav = this.toggleNav.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
+    };
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
     };
 
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
-    }
+    };
 
     render () {
         return (
@@ -42,23 +51,51 @@ class Header extends Component {
                             <NavbarToggler onClick={this.toggleNav} />
                             <Collapse isNavOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
-                                    <NavItem>
+                                    <Link to="/">
                                         <NavLink className="nav-link" to="/home">Home</NavLink>
-                                    </NavItem>
-                                    <NavItem>
+                                    </Link>
+                                    <Link to="ourmenu">
                                         <NavLink className="nav-link" to="/ourmenu">Our Menu</NavLink>
-                                    </NavItem>
-                                    <NavItem>
+                                    </Link>
+                                    <Link to="/location">
                                         <NavLink className="nav-link" to="/location">Location</NavLink>
-                                    </NavItem>
-                                    <NavItem>
+                                    </Link>
+                                    <Link to="/aboutus">
                                         <NavLink className="nav-link" to="/aboutus">About Us</NavLink>
-                                    </NavItem>
+                                    </Link>
+
+                                    <div>
+                                         #Social <a href="https://twitter.com/b_activeenergy">
+                                             <i className="fa fa-twitter"></i></a>
+
+                                            <a href="https://b-m.facebook.com/Active-Energy-181432185206076/">
+                                            <i className="fa fa-facebook"></i></a> 
+                                    </div>
+
+                                    <span className="navbar-text ml-auto">
+                                        <Button outline onClick={this.toggleModal}>Hours</Button>
+                                    </span>
                                 </Nav>
                             </Collapse>
                         </div>
                     </div>
                 </Navbar>
+
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Hours</ModalHeader>
+                        <ModalBody>
+                            <ListGroup variant="flush">
+                                <ListGroupItem>Sunday 11 A.M. - 2 P.M.</ListGroupItem>
+                                <ListGroupItem>Monday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem>Tuesday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem>Wednesday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem>Thursday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem>Friday 7 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem>Saturday 8 A.M. - 2 P.M.</ListGroupItem>
+                            </ListGroup>
+                        </ModalBody>
+                </Modal>
+
             </React.Fragment>
         );
     }
