@@ -57,9 +57,6 @@ class Header extends Component {
                                     <Link to="ourmenu">
                                         <NavLink className="nav-link" to="/ourmenu">Our Menu</NavLink>
                                     </Link>
-                                    <Link to="/location">
-                                        <NavLink className="nav-link" to="/location">Location</NavLink>
-                                    </Link>
                                     <Link to="/aboutus">
                                         <NavLink className="nav-link" to="/aboutus">About Us</NavLink>
                                     </Link>

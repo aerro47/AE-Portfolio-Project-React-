@@ -14,8 +14,6 @@ class HomeCards extends Component {
                     </div>
                 </div>
 
-
-
                 <Card>
                     <CardDeck>
                         <div className="card menu-card">
