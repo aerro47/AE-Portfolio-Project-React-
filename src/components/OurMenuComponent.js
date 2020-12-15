@@ -97,7 +97,7 @@ function Menu() {
                     <div className="col">
                         <h3>Cafe Latte</h3>
                         <ul className="list-unstyled">
-                            <li>Cafe Movha Capuccino</li>
+                            <li>Cafe Mocha Capuccino</li>
                             <li>Peanut Butter Latte*</li>
                             <li>Carmael Latte</li>
                         </ul>
@@ -140,7 +140,7 @@ function Menu() {
                     <div className="card menu-card">
                         <div className="row">
                           <div className="col-md-4">
-                            <img src="img/Formula1-Herbalife-image.png" className="card-img d-none d-md-block mx-3" alt="Image of formula one" />
+                            <img src="./images/Formula1-Herbalife-image.png" className="card-img d-none d-md-block mx-3" alt="Image of formula one" />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
@@ -165,7 +165,7 @@ function Menu() {
                     <div className="card menu-card">
                         <div className="row">
                           <div className="col-md-4">
-                            <img src="img/PDM image.jpg" className="card-img d-none d-md-block mx-3" alt="Image of PDM" />
+                            <img src="./images/PDM image.jpg" className="card-img d-none d-md-block mx-3" alt="Image of PDM" />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">

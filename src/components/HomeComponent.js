@@ -36,7 +36,7 @@ class HomeCards extends Component {
                         </div>
                     </CardDeck>
                 </Card>
-
+                
                 <h2>Location</h2>
                 <MapContainer />
             </React.Fragment>

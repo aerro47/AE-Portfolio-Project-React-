@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import HomeCards from './HomeComponent';
 import Menu from './OurMenuComponent';
 import { Team } from './AboutusComponent';
-import { Route, Switch, Redirect, withRouter, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 
 
@@ -13,10 +14,12 @@ function Main() {
                 <div className="Main">
                     <Header />
                     <Switch>
-                        <Route path='/' exact component={Homepage} />
+                        <Route path='/home' exact component={Homepage} />
                         <Route path='/ourmenu' component={Menu} />
                         <Route path='/aboutus' component={Team} />
+                        <Redirect to='/home' />
                     </Switch>
+                    <Footer />
                 </div>
             </Router>
         );

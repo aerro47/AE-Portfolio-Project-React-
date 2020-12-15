@@ -39,15 +39,14 @@ class Header extends Component {
                                 <div className="col-4 col-sm-3 col-md-2 align-self-center">
                                     <img src="../images/Active Energy logo.png" className="img-fluid" alt="Logo for Active Energy" height="200" />
                                 </div>
-                                <h1>A Healthier Lifestyle</h1>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
 
-                <Navbar expand="sm" sticky="top">
+                <Navbar expand="md" sticky="top">
                     <div className="container">
-                        <div className="col-md-10">
+                        <div className="col-md-10 mx-2">
                             <NavbarToggler onClick={this.toggleNav} />
                             <Collapse isNavOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar>
@@ -61,15 +60,15 @@ class Header extends Component {
                                         <NavLink className="nav-link" to="/aboutus">About Us</NavLink>
                                     </Link>
 
-                                    <div>
+                                    <div className="ml-3">
                                          #Social <a href="https://twitter.com/b_activeenergy">
                                              <i className="fa fa-twitter"></i></a>
-
+                                            {"\n"}
                                             <a href="https://b-m.facebook.com/Active-Energy-181432185206076/">
                                             <i className="fa fa-facebook"></i></a> 
                                     </div>
 
-                                    <span className="navbar-text ml-auto">
+                                    <span className="navbar-text ml-3">
                                         <Button outline onClick={this.toggleModal}>Hours</Button>
                                     </span>
                                 </Nav>
