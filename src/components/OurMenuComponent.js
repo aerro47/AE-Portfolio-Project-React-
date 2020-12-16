@@ -16,7 +16,7 @@ function Menu() {
                                     <li>Sign In</li>
                                 </ol>
                             </div>
-                            <div className="col">
+                            <div className="col tea-list">
                                 <h5>Teas</h5>
                                 <ul className="list-unstyled">
                                     <li>Peach</li>

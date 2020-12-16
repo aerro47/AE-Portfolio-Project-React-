@@ -7,7 +7,7 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col offset-2">
-                        <h5>Links</h5>
+                        <h4>Links</h4>
                         <ul className="list-unstyled">
                             <li><Link to='/home'>Home</Link></li>
                             <li><Link to='/ourmenu'>Our Menu</Link></li>
@@ -15,7 +15,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="col">
-                        <h5>Contact Information</h5>
+                        <h4>Contact Information</h4>
                         <ul className="list-unstyled">
                             <li>
                                 <h6>Address</h6>

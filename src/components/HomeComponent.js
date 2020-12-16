@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MapContainer from './MapLocation';
-import { Card, CardBody, CardTitle, CardDeck } from 'reactstrap';
+import { Card, CardBody, CardDeck } from 'reactstrap';
 
 class HomeCards extends Component {
 
@@ -18,19 +18,19 @@ class HomeCards extends Component {
                     <CardDeck>
                         <div className="card menu-card">
                             <CardBody>
-                                <CardTitle>News</CardTitle>
+                                <h5>News</h5>
                                 <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quae est cupiditate nemo consequatur, obcaecati suscipit, quasi error voluptatibus blanditiis soluta temporibus doloribus. Ea minima quam, blanditiis beatae molestias cupiditate.</p>
                             </CardBody>
                         </div>
                         <div className="card menu-card">
                             <CardBody>
-                                <CardTitle>Our Mission</CardTitle>
+                                <h5>Our Mission</h5>
                                 <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quae est cupiditate nemo consequatur, obcaecati suscipit, quasi error voluptatibus blanditiis soluta temporibus doloribus. Ea minima quam, blanditiis beatae molestias cupiditate.</p>
                             </CardBody>
                         </div>
                         <div className="card menu-card">
                             <CardBody>
-                                <CardTitle>Community Feedback</CardTitle>
+                                <h5>Community Feedback</h5>
                                 <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quae est cupiditate nemo consequatur, obcaecati suscipit, quasi error voluptatibus blanditiis soluta temporibus doloribus. Ea minima quam, blanditiis beatae molestias cupiditate.</p>
                             </CardBody>
                         </div>
