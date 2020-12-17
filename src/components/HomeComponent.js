@@ -6,7 +6,7 @@ class HomeCards extends Component {
 
     render () {
         return(
-            <React.Fragment>
+            <div className="container">
                 <div className="row">
                     <div className="col">
                         <h2>Welcome to Active Energy!</h2>
@@ -39,7 +39,7 @@ class HomeCards extends Component {
                 
                 <h2>Location</h2>
                 <MapContainer />
-            </React.Fragment>
+            </div>
         );
     }
 };

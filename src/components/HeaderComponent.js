@@ -44,7 +44,7 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar expand="md" sticky="top">
+                <Navbar expand="md">
                     <div className="container">
                         <div className="col-md-10 mx-2">
                             <NavbarToggler onClick={this.toggleNav} />
