@@ -166,12 +166,21 @@ form {
 
 /* Form Styling------------------------------------------------------ */
 
+#gmap div:first-child {
+    position: relative !important;
+}
+
+#gmap {
+    margin: 20px 20px;
+    border: 20px inset black;
+}
+
+
 /* Footer Styling---------------------------------------------------- */
 
 footer {
     font-size: 16pt;
     margin-top: 20px;
-    border: 1px solid red;
 }
 
 footer h5 {

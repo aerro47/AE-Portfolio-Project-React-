@@ -14,6 +14,8 @@ class HomeCards extends Component {
                     </div>
                 </div>
 
+                <div className="row">
+                    <div className= "col">
                 <Card>
                     <CardDeck>
                         <div className="card menu-card">
@@ -36,9 +38,16 @@ class HomeCards extends Component {
                         </div>
                     </CardDeck>
                 </Card>
+                    </div>
+                        
+                </div>   
                 
-                <h2>Location</h2>
-                <MapContainer />
+                <div className="row">
+                    <div className="col">
+                        <h2>Location</h2>
+                        <MapContainer />
+                    </div>
+                </div>
             </div>
         );
     }
