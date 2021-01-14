@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 function Menu() {
     return (
@@ -37,7 +37,7 @@ function Menu() {
                 <div className="card menu-card">
                     <div className="card-body">
                         <h5 className="card-title">A Few Thigs to Know</h5>
-                        <p className="card-text">Shakes are Approximately 350 calories each Each shake has 24+ grams of protein Cash or check only Credit cards accepted for punch cards only!</p>
+                        <p className="card-text">Shakes are Approximately 350 calories each Each shake has 24+ grams of Protein Cash or check only Credit cards accepted for punch cards only!</p>
                         <a href="https://b-m.facebook.com/Active-Energy-181432185206076/" className="card-link"><i className="fa fa-check-circle"></i> Check in with us on Facebook!</a>
                     </div>
                 </div>
@@ -139,22 +139,22 @@ function Menu() {
                 <div className="col">
                     <div className="card menu-card">
                         <div className="row">
-                          <div className="col-md-4">
+                        <div className="col-md-4">
                             <img src="./images/Formula1-Herbalife-image.png" className="card-img d-none d-md-block mx-3" alt="Image of formula one" />
-                          </div>
-                          <div className="col-md-8">
+                        </div>
+                        <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title">Formula One</h5>
-                              <p className="card-text">Treat your body to a healthy, balanced meal in no time! Not only are these shakes easy to make, they’re also delicious. With up to 21 essential vitamins and minerals – and in a variety of flavors – weight management never tasted so good! Part of the Herbalife Nutrition.</p>
-                              <h5 className="card-subtitle">Key Benefits</h5>
-                              <ul>
-                                  <li>A healthy meal with up to 21 vitamins and minerals and essential nutrients.</li>
-                                  <li>9 g of protein and fiber help support weight management.</li>
-                                  <li>0 cholesterol; 0 trans fats</li>
-                                  <li>Formula 1 gives you protein and balanced nutrition.</li>
-                              </ul>
+                            <h5 className="card-title">Formula One</h5>
+                            <p className="card-text">Treat your body to a healthy, balanced meal in no time! Not only are these shakes easy to make, they’re also delicious. With up to 21 essential vitamins and minerals – and in a variety of flavors – weight management never tasted so good! Part of the Herbalife Nutrition.</p>
+                            <h5 className="card-subtitle">Key Benefits</h5>
+                            <ul>
+                                <li>A healthy meal with up to 21 vitamins and minerals and essential nutrients.</li>
+                                <li>9 g of protein and fiber help support weight management.</li>
+                                <li>0 cholesterol; 0 trans fats</li>
+                                <li>Formula 1 gives you protein and balanced nutrition.</li>
+                            </ul>
                             </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -164,28 +164,27 @@ function Menu() {
                 <div className="col">
                     <div className="card menu-card">
                         <div className="row">
-                          <div className="col-md-4">
+                        <div className="col-md-4">
                             <img src="./images/PDM image.jpg" className="card-img d-none d-md-block mx-3" alt="Image of PDM" />
-                          </div>
-                          <div className="col-md-8">
+                        </div>
+                        <div className="col-md-8">
                             <div className="card-body">
-                              <h5 className="card-title">Protein Drink Mix</h5>
-                              <p className="card-text">Satisfy your hunger and stay energized with the power of protein! Add Protein Drink Mix to your favorite Formula 1 shake to boost your protein intake to 24 g (without the addition of milk) or mix with water for a nutritious protein snack.</p>
-                              <h5 className="card-subtitle">Key Benefits</h5>
-                              <ul>
-                                  <li>24 vitamins and minerals.</li>
-                                  <li>15 g of soy protein per serving.</li>
-                                  <li>5 g of carbs per serving.</li>
-                              </ul>
+                            <h5 className="card-title">Protein Drink Mix</h5>
+                            <p className="card-text">Satisfy your hunger and stay energized with the power of protein! Add Protein Drink Mix to your favorite Formula 1 shake to boost your protein intake to 24 g (without the addition of milk) or mix with water for a nutritious protein snack.</p>
+                            <h5 className="card-subtitle">Key Benefits</h5>
+                            <ul>
+                                <li>24 vitamins and minerals.</li>
+                                <li>15 g of soy protein per serving.</li>
+                                <li>5 g of carbs per serving.</li>
+                            </ul>
                             </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     )
-}
 
+}
 export default Menu;

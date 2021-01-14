@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MapContainer from './MapLocation';
 import { Card, CardBody, CardDeck } from 'reactstrap';
+import CarouselContainer from './CarouselComponent';
+
 
 class HomeCards extends Component {
 
@@ -13,11 +15,15 @@ class HomeCards extends Component {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestias voluptates mollitia et doloribus laudantium itaque, repellat cumque nostrum! Facilis optio repellat at voluptatibus voluptatem quaerat maiores natus est fuga.</p>
                     </div>
                 </div>
+                
+                <div className='row'>
+                    <CarouselContainer />
+                </div>
 
                 <div className="row">
                     <div className= "col">
                 <Card>
-                    <CardDeck>
+                    <CardDeck className="card-deck">
                         <div className="card menu-card">
                             <CardBody>
                                 <h5>News</h5>
