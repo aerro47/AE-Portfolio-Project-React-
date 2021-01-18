@@ -69,7 +69,7 @@ class Header extends Component {
                                     </div>
 
                                     <span className="navbar-text ml-3">
-                                        <Button outline onClick={this.toggleModal}>Hours</Button>
+                                        <Button outline onClick={this.toggleModal} style={{background: 'black', color: '#10f009'}}>Hours</Button>
                                     </span>
                                 </Nav>
                             </Collapse>
@@ -78,16 +78,16 @@ class Header extends Component {
                 </Navbar>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Hours</ModalHeader>
-                        <ModalBody>
+                    <ModalHeader className='hours-header' toggle={this.toggleModal}>Hours</ModalHeader>
+                        <ModalBody className='hours-modal'>
                             <ListGroup variant="flush">
-                                <ListGroupItem>Sunday 11 A.M. - 2 P.M.</ListGroupItem>
-                                <ListGroupItem>Monday 6:30 A.M. - 5 P.M.</ListGroupItem>
-                                <ListGroupItem>Tuesday 6:30 A.M. - 5 P.M.</ListGroupItem>
-                                <ListGroupItem>Wednesday 6:30 A.M. - 5 P.M.</ListGroupItem>
-                                <ListGroupItem>Thursday 6:30 A.M. - 5 P.M.</ListGroupItem>
-                                <ListGroupItem>Friday 7 A.M. - 5 P.M.</ListGroupItem>
-                                <ListGroupItem>Saturday 8 A.M. - 2 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Sunday 11 A.M. - 2 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Monday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Tuesday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Wednesday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Thursday 6:30 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Friday 7 A.M. - 5 P.M.</ListGroupItem>
+                                <ListGroupItem className='hours-list' >Saturday 8 A.M. - 2 P.M.</ListGroupItem>
                             </ListGroup>
                         </ModalBody>
                 </Modal>

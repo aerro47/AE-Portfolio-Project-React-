@@ -16,7 +16,7 @@ export function Team() {
                         <div className="face face2">
                             <div className="content">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
-                                <a href="https://accounts.myherbalife.com/Account/Create">Sign up with Brian!</a>
+                                <a href="https://accounts.myherbalife.com/Account/Create" className='card-link'>Sign up with Brian!</a>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export function Team() {
                         <div className="face face2">
                             <div className="content">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
-                                <a href="https://accounts.myherbalife.com/Account/Create">Sign up with John!</a>
+                                <a href="https://accounts.myherbalife.com/Account/Create" className='card-link'>Sign up with John!</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export function Team() {
                         <div className="face face2">
                             <div className="content">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
-                                <a href="https://accounts.myherbalife.com/Account/Create">Sign up with Andy!</a>
+                                <a href="https://accounts.myherbalife.com/Account/Create" className='card-link'>Sign up with Andy!</a>
                             </div>
                         </div>
                     </div>

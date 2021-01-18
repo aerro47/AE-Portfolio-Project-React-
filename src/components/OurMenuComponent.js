@@ -37,8 +37,10 @@ function Menu() {
                 <div className="card menu-card">
                     <div className="card-body">
                         <h5 className="card-title">A Few Thigs to Know</h5>
-                        <p className="card-text">Shakes are Approximately 350 calories each Each shake has 24+ grams of Protein Cash or check only Credit cards accepted for punch cards only!</p>
-                        <a href="https://b-m.facebook.com/Active-Energy-181432185206076/" className="card-link"><i className="fa fa-check-circle"></i> Check in with us on Facebook!</a>
+                        <p className="card-text">Shakes are Approximately 350 calories each</p>
+                        <p className="card-text">Each shake has 24+ grams of Protein </p>
+                        <p className="card-text">Cash or check only Credit cards accepted for punch cards only!</p>
+                        <a href="https://b-m.facebook.com/Active-Energy-181432185206076/" className="card-link"><i className="fa fa-check-circle card-link"></i> Check in with us on Facebook!</a>
                     </div>
                 </div>
             </div>
